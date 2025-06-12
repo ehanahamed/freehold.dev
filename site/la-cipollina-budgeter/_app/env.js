@@ -1,0 +1,1 @@
+export const env={"PUBLIC_API_URL":"https://server.freehold.dev/la-cipollina-budgeter"}
