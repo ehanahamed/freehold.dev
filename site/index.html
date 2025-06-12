@@ -14,6 +14,14 @@
           color-scheme: dark;
         }
       }
+      .limit-width-thing {
+        max-width: 40vw;
+      }
+      @media only screen and (max-width: 800px) {
+        .limit-width-thing {
+          max-width: 80vw;
+        }
+      }
     </style>
   </head>
   <body>
@@ -22,7 +30,7 @@
       <h1 class="title">
         Projects 
       </h1>
-      <div class="card">
+      <div class="card limit-width-thing">
   <div class="card-image">
     <figure class="image is-4by3">
       <img
