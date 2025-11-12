@@ -1,0 +1,32 @@
+---
+import IconMenu from "./icons/Menu.astro";
+import IconCloseXMark from "./icons/CloseXMark.astro";
+const { activePage } = Astro.props;
+---
+<header class="navbar">
+    <div class="menu">
+        <input type="checkbox" id="nav-menu-toggle" class="nav-menu-toggle" />
+        <label for="nav-menu-toggle" class="nav-menu-open">
+            <IconMenu width="1.2rem" height="1.2rem" />
+        </label>
+        <label for="nav-menu-toggle" class="nav-menu-close">
+            <IconCloseXMark width="1.4rem" height="1.4rem" />
+        </label>
+        <div class="nav-menu">
+            <div class={
+              (activePage == "home") ? "current" : ""
+            }>
+              <a href="/home">Home</a>
+            </div>
+            <div class={ activePage == "explore" ? "current" : "" }>
+              <a href="/explore">Explore</a>
+            </div>
+            <!--<div class={ page.data?.header?.activePage == "classes" ? "current" : "" }>
+              <a href="/classes">Classes</a>
+            </div>-->
+            <div class={ activePage == "settings" ? "current" : "" }>
+              <a href="/settings">Settings</a>
+            </div>
+        </div>
+    </div>
+</header>
