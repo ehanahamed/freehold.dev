@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/parallax-stars.css";
+---
+<style>
+    .pretty-green-text-gradient {
+        background-image: linear-gradient(to right, #89FFCC, #9EFF76);
+        background-clip: text;
+        color: transparent;
+    }
+</style>
+<Layout activePage="home">
+    <div class="grid page" style="padding-top: 4rem;">
+        <div class="content">
+            <h1 class="h2 pretty-green-text-gradient" style="margin-bottom: 2rem;">404 Not Found</h1>
+            <p>Back to <a href="/">Home Page</a>?</p>
+        </div>
+    </div>
+</Layout>
