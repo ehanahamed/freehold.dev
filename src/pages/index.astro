@@ -14,6 +14,36 @@ import "../styles/parallax-stars.css";
     .slightly-larger-text {
         font-size: 1.4rem;
     }
+    .kinda-large-1 {
+         font-size: 2rem;
+    }
+    .kinda-large-2 {
+         font-size: 2.5rem;
+    }
+    .kinda-large-3 {
+         font-size: 3rem;
+    }
+    .larger-than-usual-button {
+        font-size: 1.4rem;
+        padding: 1rem 1.6rem;
+        border-radius: 2rem;
+    }
+    @media only screen and (max-width: 460px) {
+        .kinda-large-1 {
+             font-size: 1.5rem;
+        }
+        .kinda-large-2 {
+             font-size: 2rem;
+        }
+        .kinda-large-3 {
+             font-size: 2.5rem;
+        }
+        .larger-than-usual-button {
+            font-size: 1.2rem;
+            padding: 0.8rem 1.4rem;
+            border-radius: 2rem;
+        }
+    }
 </style>
 <Layout activePage="home">
     <div class="background-bg0" style="position: relative; z-index: 0;">
@@ -24,20 +54,20 @@ import "../styles/parallax-stars.css";
         </div>
         <div class="flex" style="position: relative; z-index: 1; padding: 4rem; align-items: center; justify-items: center; margin-top: 0px;">
         <div>
-            <p class="b" style="font-size: 2.5rem; margin-bottom: 2rem;">Mini-Hackathon</p>
+            <p class="b kinda-large-2" style="margin-bottom: 2rem;">Mini-Hackathon</p>
             <div class="flex pretty-green-text-gradient" style="row-gap: 1rem; column-gap: 3rem; margin-bottom: 0px;">
                 <p class="">
-                <span class="line" style="font-size: 2rem; line-height: 1;">Friday</span>
-                    <span class="b" style="font-size: 3rem;">Nov 21, 2025</span>
+                <span class="line kinda-large-1" style="line-height: 1;">Friday</span>
+                    <span class="b kinda-large-3">Nov 21, 2025</span>
                 </p>
                 <p>
-                    <span class="line" style="font-size: 2rem; line-height: 1;">Room</span>
-                    <span class="b" style="font-size: 3rem;">D112</span>
+                    <span class="line kinda-large-1" style="line-height: 1;">Room</span>
+                    <span class="b kinda-large-3">D112</span>
                 </p>
             </div>
-            <p class="pretty-green-text-gradient" style="font-size: 2rem; margin-top: 0.8rem;">After School Until 3:30 PM</p>
-            <div class="flex">
-                <a class="button large alt" href="https://docs.google.com/forms/d/e/1FAIpQLSdADa7gRVG8FTE1iA05hHKAYT9zSbiNrFd5MwTciBOmlnZEmw/viewform?usp=dialog">Register</a>
+            <p class="pretty-green-text-gradient kinda-large-1" style="margin-top: 0.8rem;">After School Until 3:30 PM</p>
+                <div class="flex" style="margin-top: 2rem;">
+                    <a class="button alt larger-than-usual-button" style="" href="https://docs.google.com/forms/d/e/1FAIpQLSdADa7gRVG8FTE1iA05hHKAYT9zSbiNrFd5MwTciBOmlnZEmw/viewform?usp=dialog">Register Here</a>
             </div>
         </div>
     </div>
