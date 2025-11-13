@@ -54,9 +54,12 @@ import "../styles/parallax-stars.css";
         display: inline;
         content: " ";
       }
+      .optional-text-i-guess {
+        /* display: none; */
+      }
     }
 </style>
-<Layout activePage="home">
+<Layout activePage="home" title="FHS Hack Club">
     <div class="background-bg0" style="position: relative; z-index: 0;">
         <div style="position: absolute; inset: 0; z-index: 0; overflow: hidden; margin: 0px;">
             <div id="stars"></div>
@@ -65,7 +68,7 @@ import "../styles/parallax-stars.css";
         </div>
         <div class="flex" style="position: relative; z-index: 1; padding: 4rem; align-items: center; justify-items: center; margin-top: 0px;">
         <div>
-            <p class="b kinda-large-2" style="margin-bottom: 2rem;">Mini-Hackathon</p>
+            <p class="b kinda-large-2" style="margin-bottom: 2rem;">Mini-Hackathon <span class="optional-text-i-guess">& Interest Meeting</span></p>
             <div class="flex pretty-green-text-gradient" style="row-gap: 1rem; column-gap: 3rem; margin-bottom: 0px;">
                 <p class="">
                 <span class="line kinda-large-1" style="line-height: 1;">Friday</span>
@@ -103,6 +106,10 @@ import "../styles/parallax-stars.css";
                     <p>We have free snacks, even if you don't build a finished project or win anything.</p>
                 </div>
             </div>
+            <h2 class="h3">We're part of Hack Club, a global network of clubs</h2>
+            <p>FHS Hack Club is part of <a href="https://hackclub.com" class="link-love with-underline">Hack Club</a>, a global network of clubs.</p>
+            <p>Hack Club is a 501(c)(3) nonprofit.</p>
+            <p></p>
         </div>
     </div>
 </Layout>
