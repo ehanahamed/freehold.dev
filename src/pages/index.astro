@@ -44,6 +44,17 @@ import "../styles/parallax-stars.css";
             border-radius: 2rem;
         }
     }
+
+    .optional-line::after {
+        content: " ";
+        display: none;
+    }
+    @media only screen and (max-width: 800px) {
+      .optional-line::after {
+        display: inline;
+        content: " ";
+      }
+    }
 </style>
 <Layout activePage="home">
     <div class="background-bg0" style="position: relative; z-index: 0;">
@@ -76,17 +87,22 @@ import "../styles/parallax-stars.css";
         <div class="content">
             <div class="grid list">
                 <div class="box">
+                    <h2 class="h4">Build a Project</h2>
+                    <p><span class="optional-line">Code an app, website, game, or anything you want.</span>
+                    <span>There's a variety of project options you can build or compete in.</span></p>
+                </div>
+                <div class="box">
                     <h2 class="h4">Learn Stuff</h2>
-                    <p><span class="optional-line">Free Workshops in Web Development & App Development.</span>
-                    <span>Beginners and stuff welcome ig</span></p>
+                    <p>
+                        <span class="optional-line">You don't need to be good at coding to participate, beginners are welcome.</span>
+                        <span>We have free workshops where you can learn how to build the project you want.</span>
+                    </p>
                 </div>
                 <div class="box">
                     <h2 class="h4">Free Snacks</h2>
-                    <p></p>
+                    <p>We have free snacks, even if you don't build a finished project or win anything.</p>
                 </div>
             </div>
-            <h2 class="h3">What's a Hackathon?</h2>
-            <p>A Hackathon is an event where people build something, like coding a project, with limited time.</p>
         </div>
     </div>
 </Layout>
