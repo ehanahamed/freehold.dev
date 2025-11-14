@@ -55,6 +55,15 @@ import "../styles/parallax-stars.css";
         content: " ";
       }
     }
+    .hackclub-style-button:hover,
+    button.hackclub-style-button:hover,
+    .button.hackclub-style-button:hover,
+    .hackclub-style-button:focus,
+    button.hackclub-style-button:focus,
+    .button.hackclub-style-button:focus {
+        color: var(--on-main);
+        transform: scale(1.1);
+    }
 </style>
 <Layout activePage="home" title="FHS Hack Club">
     <div class="background-bg0" style="position: relative; z-index: 0;">
@@ -108,23 +117,25 @@ import "../styles/parallax-stars.css";
             <p>FHS Hack Club is part of <a href="https://hackclub.com" class="link-love with-underline">Hack Club</a>, a nonprofit network of clubs around the world.</p>
             <p>Hack Club has many programs throughout the year:</p>
             <div class="grid list" style="margin-bottom: 1rem;">
-                <div class="box">
+                <div class="box" style="background-color: #0d2d55; --main: #32466e; --main-alt: #4c679b; --on-main: #ffffff;">
                     <h2 class="h4">Blueprint</h2>
                     <p>Design a Hardware project and get up to $400 to make it real!</p>
-                    <a class="button" href="https://blueprint.hackclub.com">More Info</a>
+                    <a class="button hackclub-style-button" href="https://blueprint.hackclub.com">More Info</a>
                 </div>
-                <div class="box">
+                <div class="box" style="background: linear-gradient(to right, #ef3f54, #ff6c6c); --main-alt: #dddddd;">
                     <h2 class="h4">Web Dev YSWSs</h2>
                     <p>Learn web development through fun, hands-on projects and earn delicious rewards along the way!</p>
-                    <a class="button" href="https://webdev.hackclub.com">More Info</a>
+                    <a class="button hackclub-style-button" href="https://webdev.hackclub.com">More Info</a>
                 </div>
-                <div class="box">
+                <div class="box" style="background: linear-gradient(to right, #ef3f54, #ff6c6c); --main-alt: #dddddd;">
                     <h2 class="h4">CAD YSWSs</h2>
                     <p>Learn 3D Modeling through fun, hands-on projects and earn rewards along the way!</p>
-                    <a class="button" href="https://cad.hackclub.com">More Info</a>
+                    <a class="button hackclub-style-button" href="https://cad.hackclub.com">More Info</a>
                 </div>
             </div>
-            <a class="button alt large" href="https://hackclub.com">And More</a>
+            <div class="flex" style="justify-content: center;">
+                <a class="button faint large" href="https://hackclub.com">And More</a>
+            </div>
         </div>
     </div>
 </Layout>
