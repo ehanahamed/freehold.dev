@@ -1,6 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import "../styles/parallax-stars.css";
+import ArrowRightIcon from "../components/icons/ArrowRight.astro";
 ---
 <style>
     .pretty-green-text-gradient {
@@ -103,46 +104,45 @@ import "../styles/parallax-stars.css";
             </div>
             <p class="pretty-green-text-gradient kinda-large-1" style="margin-top: 0.8rem;">After School Until 3:30 PM</p>
                 <div class="flex" style="margin-top: 2rem;">
-                    <a class="button alt larger-than-usual-button" style="" href="https://docs.google.com/forms/d/e/1FAIpQLSdADa7gRVG8FTE1iA05hHKAYT9zSbiNrFd5MwTciBOmlnZEmw/viewform?usp=dialog">Register Here</a>
+                    <a class="button alt larger-than-usual-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdADa7gRVG8FTE1iA05hHKAYT9zSbiNrFd5MwTciBOmlnZEmw/viewform?usp=dialog" style="display: flex; gap: 0.8rem; align-items: center;">
+                        <span>Register Here</span>
+                        <ArrowRightIcon width="1.2rem" height="1.2rem" style="margin-top: 0px;"></ArrowRightIcon>
+                    </a>
             </div>
         </div>
     </div>
     </div>
-    <div class="grid page" style="margin-bottom: 10rem;">
+    <div class="grid page">
         <div class="content">
             <div class="grid list">
                 <div class="box">
-                    <h2 class="h4">Build a Project</h2>
-                    <p><span class="optional-line">Code an app, website, game, or anything you want.</span>
-                    <span>There's a variety of project options you can build or compete in.</span></p>
+                    <h2 class="h4">It's fun</h2>
+                    <p>We build projects like apps, websites, games, & more and have fun activities.</p>
                 </div>
                 <div class="box">
-                    <h2 class="h4">Learn Stuff</h2>
-                    <p>
-                        <span class="optional-line">You don't need to be good at coding to participate, beginners are welcome.</span>
-                        <span>We have free workshops where you can learn how to build the project you want.</span>
-                    </p>
+                    <h2 class="h4">Beginners Welcome</h2>
+                    <p>We have free workshops & will teach you!</p>
                 </div>
                 <div class="box">
                     <h2 class="h4">Free Snacks</h2>
-                    <p>We have free snacks, even if you don't build a finished project or win anything.</p>
+                    <p>We have free snacks and some cool prizes.</p>
                 </div>
             </div>
-            <h2 class="h3">We're part of Hack Club, a global network of clubs</h2>
+            <h2 class="h3" style="margin-top: 3rem;">We're part of Hack Club, a global network of clubs</h2>
             <p>FHS Hack Club is part of <a href="https://hackclub.com" class="link-love with-underline">Hack Club</a>, a nonprofit network of clubs around the world.</p>
-            <p>Hack Club has many programs throughout the year:</p>
+            <p>Hack Club has many programs throughout the year with cool prizes & opportunities:</p>
             <div class="grid list" style="margin-bottom: 1rem;">
                 <div class="box hackclub-blueprint-style-box">
                     <h2 class="h4">Blueprint</h2>
                     <p>Design a Hardware project and get up to $400 to make it real!</p>
                     <a class="button hackclub-style-button" href="https://blueprint.hackclub.com">More Info</a>
                 </div>
-                <div class="box" style="background: linear-gradient(to right, #ef3f54, #ff6c6c); --main-alt: #dddddd;">
+                <div class="box" style="background: linear-gradient(to right, #ef3f54, #ff6c6c); --main: rgba(255, 255, 255, 0.1); --main-alt: rgba(255, 255, 255, 0.4); --on-main: #ffffff;">
                     <h2 class="h4">Web Dev YSWSs</h2>
-                    <p>Learn web development through fun, hands-on projects and earn delicious rewards along the way!</p>
+                    <p>Learn web development through fun, hands-on projects and earn delicious rewards!</p>
                     <a class="button hackclub-style-button" href="https://webdev.hackclub.com">More Info</a>
                 </div>
-                <div class="box" style="background: linear-gradient(to right, #ef3f54, #ff6c6c); --main-alt: #dddddd;">
+                <div class="box" style="background: linear-gradient(to right, #ef3f54, #ff6c6c); --main: rgba(255, 255, 255, 0.1); --main-alt: rgba(255, 255, 255, 0.4); --on-main: #ffffff;">
                     <h2 class="h4">CAD YSWSs</h2>
                     <p>Learn 3D Modeling through fun, hands-on projects and earn rewards along the way!</p>
                     <a class="button hackclub-style-button" href="https://cad.hackclub.com">More Info</a>
@@ -153,4 +153,10 @@ import "../styles/parallax-stars.css";
             </div>
         </div>
     </div>
+    <footer style="margin-bottom: 4rem; padding-top: 2rem; border-top: none;">
+        <p class="fg0" style="text-align: start; font-size: 0.9rem;">
+            <span class="line">FHS Hack Club</span>
+            <span>Freehold High School · Freehold, New Jersey</span>
+        </p>
+    </footer>
 </Layout>
