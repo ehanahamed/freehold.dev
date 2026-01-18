@@ -2,8 +2,19 @@
 import Layout from "../layouts/Layout.astro";
 import "../styles/parallax-stars.css";
 import ArrowRightIcon from "../components/icons/ArrowRight.astro";
+import CodebergIcon from "../components/icons/Codeberg.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
 ---
 <style>
+    .customgridlist {
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 1000px) {
+        .customgridlist {
+            grid-template-columns: 1fr;
+        }
+    }
     .pretty-green-text-gradient {
         background-image: linear-gradient(to right, #89FFCC, #9EFF76);
         background-clip: text;
@@ -14,11 +25,42 @@ import ArrowRightIcon from "../components/icons/ArrowRight.astro";
     <div class="grid page" style="padding-top: 4rem;">
         <div class="content">
             <h1 class="h2 pretty-green-text-gradient" style="margin-bottom: 2rem;">Projects</h1>
-            <div class="grid list">
+            <div class="grid customgridlist">
                 <div class="box">
-                    <p class="h4">Data Structures & Algorithms Visualizer</p>
-                    <p class="fg0">HackFRee 2026 Project</p>
-                    <a class="button alt" href="https://freehold.dev/dsa-visualizer">Website</a>
+                    <h3>Data Structures & Algorithms Visualizer</h3>
+                    <p class="fg0">HackFRee 2026 Hackathon Project</p>
+                    <div>
+                        <p class="fg0" style="margin-bottom: 0px;">Website:</p>
+                        <a href="https://freehold.dev/dsa-visualizer" class="button alt yay no-box-shadow" style="margin-top: 0.2rem;">
+                            freehold.dev/dsa-visualizer
+                        </a>
+                    </div>
+                    <div>
+                        <p class="fg0" style="margin-bottom: 0px;">Source Code:</p>
+                        <div class="flex compact-gap" style="margin-top: 0.2rem;"> 
+                            <a href="https://github.com/ehanahamed/dsa-visualizer" class="button faint">
+                                <GitHubIcon></GitHubIcon> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>La Cipollina Budgeter</h3>
+                    <p class="fg0">AP Computer Science A Project</p>
+                    <div>
+                        <p class="fg0" style="margin-bottom: 0px;">Website:</p>
+                        <a href="https://freehold.dev/la-cipollina-budgeter" class="button alt yay no-box-shadow" style="margin-top: 0.2rem;">
+                            freehold.dev/la-cipollina-budgeter
+                        </a>
+                    </div>
+                    <div>
+                        <p class="fg0" style="margin-bottom: 0px;">Source Code:</p>
+                        <div class="flex compact-gap" style="margin-top: 0.2rem;"> 
+                            <a href="https://github.com/ehanahamed/la-cipollina-budgeter" class="button faint">
+                                <GitHubIcon></GitHubIcon> GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
